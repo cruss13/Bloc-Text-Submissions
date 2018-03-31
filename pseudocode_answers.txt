@@ -1,0 +1,68 @@
+Exercises
+
+Create a file named pseudocode_answers.txt and answer these questions in it:
+
+
+Short Answer
+
+1. Why do programmers use pseudocode?
+	
+	A: Pseudocode is typically used to brainstorm and develop algorithms without having to write out actual code in a specific coding language. It is easy for people to read and understand.
+
+2. If you run pseudocode on your computer what would happen?
+
+	A: Nothing. There is no real code involved, it is written in English describing the processes a programmer will follow when they write the actual code.
+
+
+
+Programming Assignment
+
+Write the following algorithms in pseudocode:
+
+1. Create a function that takes two numbers and prints out the greater number.
+
+INPUT first number
+INPUT second number
+IF first number is greater than or equal to second number
+	PRINT first number
+ELSE
+	PRINT second number
+
+
+2. Create a function that prints out the numbers from 1 to 100.
+
+SET number to 0
+WHILE the number is less than 100
+	ADD 1 to number
+	PRINT number
+ENDWHILE
+
+
+3. Create a function that searches for a specific entry in a phonebook.
+
+SET variable to ARRAY
+INPUT a name
+IF name is found in ARRAY
+	PRINT name and location in array
+ELSE
+	PRINT 'Not Found' 
+END
+4. Using the pseudocode you wrote for the previous question, implement it in any computer language of your choice.
+
+
+var phoneBook = ['John Smith', 'Steve Smith', 'Zack Smith']
+
+function nameFinder(phoneBook, name){
+  var location=''
+  
+  for (var i = 0; i < phoneBook.length; i++) {
+      if (name == phoneBook[i]) {
+        location = (name + ' at ' + i)
+      }
+  }
+  if (location === '') {
+    return 'Not found'
+  } else {
+    return location
+  }    
+}
